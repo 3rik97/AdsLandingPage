@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(11, 8, 20);
+    height: 1200px;
+    position: relative;
+}
+
+.navigation-bar {
+    position: fixed;
+    padding: 25px 260px 25px 260px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    color: white;
+    font-family: Poppins;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+h1>span {
+    color: #EE3945;
+}
+
+h2 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+li h2 {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.logo {
+    height: auto;
+    max-width: 200px;
+    width: 200px;
+}
+
+div.content>.row>h2 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+}
+
+div.content>.container {
+    margin: auto;
+
+}
+
+.col-sm-8>h4 {
+    font-size: 16px;
+}
+
+.header {
+    padding-top: 180px;
+    padding-bottom: 30px;
+    margin: auto;
+    background-color: #1e1e1e;
+    background-image: url("img/bj\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.block1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner-image {
+    display: block;
+    height: auto;
+    max-width: 420px;
+    width: 420px;
+    margin: auto;
+    position: absolute;
+}
+
+.button1 {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 120px;
+    overflow: hidden;
+
+    &::before {
+        content: "Criar Conta";
+        background: #EE3945;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition-duration: .3s;
+    }
+
+    /* &:hover {
+        background-color: transparent;
+        color: white;
+        transition-duration: .3s;
+    } */
+
+    &:hover::before {
+        content: "Criar Conta";
+        padding: 10px;
+        left: 0;
+        bottom: 0;
+        transition-duration: .3s;
+    }
+}
+
+.button2 {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+ul li {
+    display: block;
+    list-style: none;
+    position: relative;
+}
+
+ol li {
+    color: white;
+
+}
+
+li::before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: #EE3945;
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    transform: rotate(45deg);
+    transition: ease-in .3s;
+
+
+
+}
+
+li:hover::before {
+    content: "";
+    transform: rotate(180deg);
+    transition: ease-out .3s;
+}
+
+.content {
+    padding-top: 90px;
+    padding-bottom: 117px;
+    background-color: #141414;
+}
+
+.content>div {
+    padding: 15px;
+}
+
+.tnc {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.footer-container {
+    background-color: #141414;
+}
+
+.footer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+
+div.footer>img {
+    width: auto;
+    height: 25px;
+}
+
+.footer>h6 {
+    font-family: Poppins;
+    color: white;
+    margin: auto 0;
+}
+
+
+
+@media screen and (max-width: 1320px) {
+    .navigation-bar {
+        padding: 20px !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner-image {
+        position: unset;
+    }
+
+    .col-lg-4 {
+        justify-content: center;
+    }
+
+    .content-icon {
+        display: block;
+        margin: auto;
+    }
+
+    .content-text {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .logo {
+        height: auto;
+        max-width: 200px;
+        width: 200px;
+    }
+
+    .banner-image {
+        width: 80%;
+        height: auto;
+    }
+}
