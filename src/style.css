@@ -164,8 +164,9 @@ div.content>.container {
 }
 
 .button2 {
-    background-color: #EE3945;
+
     border: 2px solid white;
+    background-color: #EE3945 !important;
     color: white;
     padding: 10px 20px 10px 20px;
     position: relative;
@@ -175,7 +176,7 @@ div.content>.container {
 
     &::before {
         content: "";
-        background-color: #EE3945;
+        background-color: white;
         color: white;
         padding: 10px 20px 10px 20px;
         height: 100%;
@@ -188,7 +189,7 @@ div.content>.container {
 
     &:hover {
         text-shadow: white 1px 1px 10px;
-
+        color: black;
         transition-duration: .3s;
     }
 
