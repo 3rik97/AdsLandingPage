@@ -164,11 +164,14 @@ div.content>.container {
 }
 
 .button2 {
-
+    margin-left: 25px;
     border: 2px solid white;
     background-color: #EE3945 !important;
     color: white;
-    padding: 10px 20px 10px 20px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 12px 24px 12px 24px;
     position: relative;
     border-radius: 120px;
     overflow: hidden;
@@ -183,7 +186,7 @@ div.content>.container {
         width: 100%;
         position: absolute;
         bottom: 0;
-        left: -200px;
+        left: -300px;
         transition-duration: .3s;
     }
 
