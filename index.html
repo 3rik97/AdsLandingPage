@@ -70,7 +70,7 @@
         <div class="container row  ">
             <div class="col-md content-section">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 d-flex ">
                         <img src="src/img/gifts 1.svg" alt="" class="content-icon">
                     </div>
                     <div class="col-sm-8 content-text">
@@ -82,7 +82,7 @@
             </div>
             <div class="col-md content-section">
                 <div class="row">
-                    <div class="col-sm-3 ">
+                    <div class="col-sm-3 d-flex ">
                         <img src="src/img/gifts 2.svg" alt="" class="content-icon">
                     </div>
                     <div class="col-sm-8 content-text">
@@ -94,7 +94,7 @@
             </div>
             <div class="col-md content-section">
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 d-flex">
                         <img src="src/img/gifts 3.svg" alt="" class="content-icon">
                     </div>
                     <div class="col-sm-8 content-text">
@@ -110,7 +110,7 @@
 
     </div>
     <div class="container">
-        <div class="row tnc">
+        <div class="tnc">
             <h3>Termos e condições</h3>
             <p>Pronto para turbinar suas apostas esportivas? Receba um bônus de 20% e aumente suas chances de vitória!
             </p>
@@ -147,13 +147,9 @@
 </body>
 <script>
     window.onscroll = function () {
-        if (window.innerWidth < 680) {
-            console.log(window.innerWidth)
-        }
-        else {
-            scrollFunction()
-        }
-    };
+        scrollFunction()
+    }
+
     var navbar = document.getElementById("navbar")
     function scrollFunction() {
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
