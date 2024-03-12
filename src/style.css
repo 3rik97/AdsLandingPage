@@ -31,7 +31,8 @@ p {
 h1 {
     font-weight: bold;
     font-size: 64px;
-    padding-right: 30rem;
+    max-width: 650px;
+    line-height: 65px;
 }
 
 h1>span {
@@ -43,10 +44,21 @@ h2 {
     font-style: italic;
 }
 
+.content-text>h3 {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
 h4 {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 
 li h2 {
@@ -107,7 +119,9 @@ div.content>.container {
     max-width: 420px;
     width: 420px;
     margin: auto;
+    margin-top: 155px;
     position: absolute;
+
 }
 
 .button1 {
@@ -116,35 +130,36 @@ div.content>.container {
     color: white;
     padding: 10px 20px 10px 20px;
     position: relative;
-    z-index: 1;
     border-radius: 120px;
     overflow: hidden;
+    z-index: 1;
 
     &::before {
-        content: "Criar Conta";
+        content: "";
         background: #EE3945;
         color: white;
         padding: 10px 20px 10px 20px;
         height: 100%;
         width: 100%;
         position: absolute;
-        bottom: -100px;
-        left: 0;
+        bottom: 0;
+        left: -200px;
         transition-duration: .3s;
     }
 
-    /* &:hover {
-        background-color: transparent;
-        color: white;
+    &:hover {
+        text-shadow: white 1px 1px 10px;
+
         transition-duration: .3s;
-    } */
+    }
 
     &:hover::before {
-        content: "Criar Conta";
+        content: "";
         padding: 10px;
         left: 0;
         bottom: 0;
         transition-duration: .3s;
+        z-index: -1;
     }
 }
 
@@ -240,7 +255,10 @@ div.footer>img {
     margin: auto 0;
 }
 
-
+.content-icon {
+    height: auto;
+    width: 80px;
+}
 
 @media screen and (max-width: 1320px) {
     .navigation-bar {
@@ -266,6 +284,7 @@ div.footer>img {
         display: block;
         margin: auto;
         height: auto;
+        width: 50px;
     }
 
     .content-text {
@@ -280,6 +299,7 @@ div.footer>img {
 
     .content-text>h3 {
         text-align: left;
+        font-size: 1.5rem;
     }
 
     h4 {
@@ -294,8 +314,17 @@ div.footer>img {
 }
 
 @media screen and (max-width: 580px) {
+    .header {
+        padding-top: 0px;
+    }
+
     h4 {
         text-align: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 45px;
     }
 
     .logo {
