@@ -39,9 +39,14 @@ h1>span {
     color: #EE3945;
 }
 
-h2 {
+
+
+.block2>h2 {
     font-weight: 300;
     font-style: italic;
+    line-height: 54px;
+    padding: 0;
+    margin: 0;
 }
 
 .content-text>h3 {
@@ -61,10 +66,19 @@ p {
     font-weight: 300;
 }
 
+ul {
+    margin-top: 30px;
+}
+
+li>h2 {
+    margin: 0;
+}
+
 li h2 {
     font-size: 24px;
     font-weight: 700;
     font-style: normal;
+
 
 }
 
@@ -97,7 +111,7 @@ div.content>.container {
 
 .header {
     padding-top: 180px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     margin: auto;
     background-color: #1b1b1b;
     background-image: url("img/bj\ 1.png");
@@ -119,7 +133,7 @@ div.content>.container {
     max-width: 420px;
     width: 420px;
     margin: auto;
-    margin-top: 155px;
+    margin-top: 195px;
     position: absolute;
 
 }
