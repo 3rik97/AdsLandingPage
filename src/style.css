@@ -99,7 +99,7 @@ div.content>.container {
     padding-top: 180px;
     padding-bottom: 30px;
     margin: auto;
-    background-color: #1e1e1e;
+    background-color: #1b1b1b;
     background-image: url("img/bj\ 1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -137,6 +137,45 @@ div.content>.container {
     &::before {
         content: "";
         background: #EE3945;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: -200px;
+        transition-duration: .3s;
+    }
+
+    &:hover {
+        text-shadow: white 1px 1px 10px;
+
+        transition-duration: .3s;
+    }
+
+    &:hover::before {
+        content: "";
+        padding: 10px;
+        left: 0;
+        bottom: 0;
+        transition-duration: .3s;
+        z-index: -1;
+    }
+}
+
+.button2 {
+    background-color: #EE3945;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    border-radius: 120px;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        background-color: #EE3945;
         color: white;
         padding: 10px 20px 10px 20px;
         height: 100%;
