@@ -484,5 +484,3 @@ div.footer>img {
         mask-image: linear-gradient(180deg, black 45%, transparent 80%);
     }
 }
-
-@media screen and (max-width: 375px) {}
