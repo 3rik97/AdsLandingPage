@@ -8,7 +8,7 @@ body {
 
 .navigation-bar {
     position: fixed;
-    padding: 25px 260px 25px 260px;
+    padding: 45px 260px 45px 260px;
     background-color: transparent;
     top: 0;
     left: 0;
@@ -82,12 +82,29 @@ li h2 {
 .logo {
     height: auto;
     max-width: 260px;
-    width: 206px;
+    width: 260px;
 }
 
 div.content>.row>h2 {
     text-align: center;
-    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 36px;
+    position: relative;
+    width: auto;
+    margin: auto;
+
+    &::before {
+        content: "";
+        height: 26px;
+        width: 7px;
+        position: absolute;
+        background-color: #EE3945;
+        left: 0;
+        top: 50%;
+        transform: translatey(-50%);
+
+    }
 }
 
 div.content>.container {
@@ -241,7 +258,10 @@ ul li {
 
 
 ol li {
-    color: white;
+    color: #ABABAB;
+    font-size: 14px;
+    line-height: 17px;
+    font: Inter;
 
 }
 
@@ -270,33 +290,30 @@ li:hover::before {
     padding-bottom: 90px;
 }
 
-.promo-container>div:nth-child(1) {
-    display: block;
-    margin: auto;
-    position: relative;
-    max-width: 335px;
-
-    &::before {
-        content: "";
-        height: 30px;
-        width: 4px;
-        position: absolute;
-        background-color: #EE3945;
-        left: -5px;
-        top: 55%;
-        transform: translateY(-50%);
-
-    }
+.promo-container {
+    padding-top: 65px;
 }
 
 .promo-container>div>h2 {
     margin: auto;
     font-weight: 700;
     font-size: 36px;
-    padding-top: 65px;
-    padding-bottom: 50px;
     position: relative;
-    width: auto;
+    width: max-content;
+    display: block;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 26px;
+        width: 7px;
+        position: absolute;
+        background-color: #EE3945;
+        left: -15px;
+        top: 50%;
+        transform: translatey(-50%);
+
+    }
 
 
 }
@@ -306,6 +323,8 @@ li:hover::before {
     max-width: 985px;
     height: auto;
     margin: auto;
+    margin-top: 65px;
+    margin-bottom: 95px;
 }
 
 .content {
@@ -329,16 +348,20 @@ li:hover::before {
 
 .tnc>h3 {
     position: relative;
+    font-size: 20px;
+    font-family: Poppins;
+    line-height: 30px;
+    font-weight: 600;
 }
 
 .tnc>h3 {
     &::before {
         content: "";
-        height: 27px;
+        height: 20px;
         width: 4px;
         position: absolute;
         background-color: #EE3945;
-        left: -5px;
+        left: -10px;
         top: 50%;
         transform: translatey(-50%);
 
