@@ -66,9 +66,6 @@ p {
     font-weight: 300;
 }
 
-ul {
-    margin-top: 30px;
-}
 
 li>h2 {
     margin: 0;
@@ -84,8 +81,8 @@ li h2 {
 
 .logo {
     height: auto;
-    max-width: 200px;
-    width: 200px;
+    max-width: 260px;
+    width: 206px;
 }
 
 div.content>.row>h2 {
@@ -142,7 +139,8 @@ div.content>.container {
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    line-height: 30px;
+    padding: 8px 16px 8px 16px;
     position: relative;
     border-radius: 120px;
     overflow: hidden;
@@ -178,7 +176,6 @@ div.content>.container {
 
 .button2 {
     margin-left: 25px;
-    border: 2px solid white;
     background-color: #EE3945 !important;
     color: white;
     font-family: Poppins;
@@ -226,9 +223,13 @@ div.content>.container {
 
 .button2 {
     background-color: transparent;
-    border: 1px solid white;
+    border: none;
     color: white;
     padding: 10px 20px 10px 20px;
+}
+
+ul {
+    margin: 30px 0 0 0;
 }
 
 ul li {
@@ -236,6 +237,8 @@ ul li {
     list-style: none;
     position: relative;
 }
+
+
 
 ol li {
     color: white;
@@ -422,20 +425,23 @@ div.footer>img {
     align-items: center;
     gap: 5px;
     padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 .header-timer>p {
     margin: 0;
+    font-family: Poppins;
+    font-weight: 500;
 }
 
 
 .timer2 {
     background-color: #D9D9D9;
-    width: min-content;
     color: black;
     font-size: 16px;
     padding: 2px 10px 2px 10px;
     border-radius: 16px;
+    font-stretch: expanded;
 }
 
 @keyframes modalPopUp {
